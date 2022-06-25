@@ -1,5 +1,11 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
+echo '🏗️👷 Styling, testing and building your project before committing'
+
 # lint files and fix eslint errors
-yarn pre-commit
+yarn pre-commit ||
+(
+        echo '\n😤🏀👋😤 Get that weak s**t out of here! 😤🏀👋😤 \nESLint Check Failed. Make the required changes listed above, add changes and try to commit again. \n'
+        false; 
+)
