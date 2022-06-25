@@ -62,7 +62,7 @@ const Home: NextPage = () => {
           >
             <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
             <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
+                            Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
         </div>
