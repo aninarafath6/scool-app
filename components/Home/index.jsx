@@ -10,7 +10,7 @@ export default function Home() {
   const dispatch = useDispatch();
 
   return (
-    <div>
+    <div className="p-1.5">
       <h1>Home</h1>
       <div>
         <Button
