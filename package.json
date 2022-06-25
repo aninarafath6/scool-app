@@ -5,6 +5,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "check-types": "tsc --pretty --noEmit",
     "prepare": "husky install"
   },
   "lint-staged": {

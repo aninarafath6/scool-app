@@ -1,8 +1,21 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-echo '🏗️👷 Styling and linting your project before committing'
+echo '🏗️👷 Typechecking, styling and linting your project before committing'
 
-# run type check
-yarn tsc
-yarn lint-staged
+yarn lint-staged ||
+(
+    echo '\n🤡😂❌🤡 Failed to style abd lint code. 🤡😂❌🤡 \nMake the required changes listed above, add changes and try to commit again.\n'
+    false;
+)
+
+
+# Check tsconfig standards
+yarn check-types ||
+(
+    echo '\n🤡😂❌🤡 Failed Type check. 🤡😂❌🤡 \nAre you seriously trying to write that? Make the changes required above.\n'
+    false;
+)
+
+# If everything passes... Now we can commit
+echo '\n🤔🤔🤔🤔... Alright... Code looks good to me...\n'
