@@ -5,7 +5,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "pre-commit": "next lint --fix && git add -A .",
+    "pre-commit": "lint-staged",
     "prepare": "husky install"
   },
   "dependencies": {
