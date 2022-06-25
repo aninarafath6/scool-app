@@ -5,11 +5,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "pre-commit": "lint-staged && git add -A .",
+    "pre-commit": "lint-staged",
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": "eslint --fix"
+    "**/*.{js,jsx,ts,tsx}": "eslint --fix"
   },
   "dependencies": {
     "next": "latest",

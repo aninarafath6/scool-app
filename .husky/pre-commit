@@ -3,6 +3,9 @@
 
 echo '🏗️👷 Styling and linting your project before committing'
 
+# run type check
+yarn tsc
+
 # lint files and fix eslint errors
 yarn pre-commit ||
 (
