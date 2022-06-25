@@ -9,13 +9,5 @@ yarn lint-staged ||
     false;
 )
 
-
-# Check tsconfig standards
-yarn check-types ||
-(
-    echo '\n🤡😂❌🤡 Failed Type check. 🤡😂❌🤡 \nAre you seriously trying to write that? Make the changes required above.\n'
-    false;
-)
-
 # If everything passes... Now we can commit
 echo '\n🤔🤔🤔🤔... Alright... Code looks good to me...\n'
