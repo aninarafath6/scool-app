@@ -10,6 +10,7 @@ _Description here_
 2. [Prettier](https://prettier.io/) for formatting
 3. [Husky](https://typicode.github.io/husky/#/) for pre-commit hook
 4. [lint-staged](https://github.com/okonet/lint-staged#readme) to run git hook only on staged files
+5. [redux-toolkit](https://redux-toolkit.js.org/) for global state management
 
 ### Preferred tools
 1. Code editor [VS Code](https://code.visualstudio.com/)
