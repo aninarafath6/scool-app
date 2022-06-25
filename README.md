@@ -11,6 +11,7 @@ _Description here_
 3. [Husky](https://typicode.github.io/husky/#/) for pre-commit hook
 4. [lint-staged](https://github.com/okonet/lint-staged#readme) to run git hook only on staged files
 5. [redux-toolkit](https://redux-toolkit.js.org/) for global state management
+6. [storybook](https://storybook.js.org/) from isolated development and visual testing
 
 ### Preferred tools
 1. Code editor [VS Code](https://code.visualstudio.com/)
