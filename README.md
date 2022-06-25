@@ -16,6 +16,20 @@ _Description here_
 1. Code editor [VS Code](https://code.visualstudio.com/)
 2. [Yarn](https://yarnpkg.com/) as package manager
 
+### Folder structure
+
+#### `elements`
+It will have all the basic elements like buttons, text types, etc.
+
+#### `components`
+The composition of elements and redux connections for pages happen here. Each sub directories will have the same name as _page_ and the name is pascal-cased. 
+
+#### `pages`
+Next.js [page](https://nextjs.org/docs/basic-features/pages) directory.
+
+#### `redux`
+All redux related files are added here. We will have page level slices, under the _slices_ directory. Upon adding a new slice, make sure you update the root reducer at `redux/store.js`.
+
 ### Commands
 
 ```
