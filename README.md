@@ -18,7 +18,17 @@ _Description here_
 ### Commands
 
 ```
+# start dev server
+yarn dev
 
+# create prod build
+yarn build 
+
+# start application in production mode
+yarn start 
+
+# lint code
+yarn lint 
 ```
 ### Links
 [Design](https://www.figma.com/file/N6qQh31qddBEpDgZ7sWTZC/Scool-Master-(Copy)?node-id=0%3A1)
