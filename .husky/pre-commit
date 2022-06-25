@@ -5,10 +5,4 @@ echo '🏗️👷 Styling and linting your project before committing'
 
 # run type check
 yarn tsc
-
-# lint files and fix eslint errors
-yarn pre-commit ||
-(
-        echo '\n😤🏀👋😤 Get that weak s**t out of here! 😤🏀👋😤 \nESLint Check Failed. Make the required changes listed above, add changes and try to commit again. \n'
-        false; 
-)
+yarn lint-staged
