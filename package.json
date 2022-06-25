@@ -8,6 +8,9 @@
     "pre-commit": "lint-staged",
     "prepare": "husky install"
   },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint --fix"
+  },
   "dependencies": {
     "next": "latest",
     "react": "18.1.0",
