@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-echo '🏗️👷 Styling, testing and building your project before committing'
+echo '🏗️👷 Styling and linting your project before committing'
 
 # lint files and fix eslint errors
 yarn pre-commit ||
