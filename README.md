@@ -11,5 +11,14 @@ _Description here_
 3. [Husky](https://typicode.github.io/husky/#/) for pre-commit hook
 4. [lint-staged](https://github.com/okonet/lint-staged#readme) to run git hook only on staged files
 
+### Preferred tools
+1. Code editor [VS Code](https://code.visualstudio.com/)
+2. [Yarn](https://yarnpkg.com/) as package manager
+
+### Commands
+
+```
+
+```
 ### Links
 [Design](https://www.figma.com/file/N6qQh31qddBEpDgZ7sWTZC/Scool-Master-(Copy)?node-id=0%3A1)
