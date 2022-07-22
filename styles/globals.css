@@ -1,3 +1,33 @@
+/* stylelint-disable color-function-notation */
+/* stylelint-disable declaration-colon-newline-after */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  background-image: url("../public/gradient\ 1\ 3.png"),
+    url("../public/gradient\ 1\ 3.png");
+  background-position: top left, bottom left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.link-underline {
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(#fff, #fff);
+  background-size: 0 3px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s ease-in-out;
+}
+
+.link-underline-black {
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(rgb(41, 41, 41), rgb(41, 41, 41));
+}
+
+.link-underline:hover {
+  background-size: 100% 3px;
+  background-position: 0 100%;
+}
