@@ -1,4 +1,5 @@
-import Image from "@next/image";
+import Image from "next/image";
+import { Images } from "../../constants/constants";
 
 function Logo({ size = "md", src, w = 130, h = 70 }) {
   return (
@@ -17,8 +18,8 @@ function Logo({ size = "md", src, w = 130, h = 70 }) {
 export default function LogoWrapper() {
   return (
     <>
-      <Logo src="/logo-md.png" size="md" />
-      <Logo src="/logo-sm.png" size="sm" w={50} h={48} />
+      <Logo src={Images.logo_md} size="md" />
+      <Logo src={Images.logo_sm} size="sm" w={50} h={48} />
     </>
   );
 }

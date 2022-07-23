@@ -3,4 +3,4 @@ const Images = {
   logo_sm: "/logo-sm.png",
 };
 
-export { Images as default };
+export { Images  };
