@@ -14,7 +14,7 @@ export default function Header() {
           className="w-auto h-auto "
         />
       </div>
-      <div className="md:invisible visible justify-between">
+      <div className="md:hidden block justify-between">
         <Image
           src="/logo-sm.png"
           alt="Picture of the author"
