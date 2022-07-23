@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Layout({ children }) {
   return (
-    <div>
+    <div className="mainLayout">
       <Header />
       {children}
     </div>

@@ -4,12 +4,14 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
+.mainLayout {
   background-image: url("../public/gradient\ 1\ 3.png"),
     url("../public/gradient\ 1\ 3.png");
-  background-position: top left, bottom left;
-  background-repeat: no-repeat;
+  background-position: top left;
+  background-repeat: repeat;
   background-size: cover;
+  width: 100vw;
+  height: 100vh;
 }
 
 .link-underline {

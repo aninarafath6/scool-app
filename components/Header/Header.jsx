@@ -3,46 +3,55 @@ import React from "react";
 
 export default function Header() {
   return (
-    <div className="mx-48 py-6 border-b border-zinc-400">
-      <div className="flex items-center justify-between">
+    //return
+    <div className=" p-4 lg:border-b border-gray-400 mx-6 lg:mx-28 flex items-center justify-between ease-in-out">
+      <div className="hidden md:block ">
         <Image
           src="/logo-md.png"
+          alt="Picture of the author"
           width="130"
           height="70"
-          className="w-auto"
-          alt="scool"
+          className="w-auto h-auto "
         />
+      </div>
+      <div className="md:invisible visible justify-between">
+        <Image
+          src="/logo-sm.png"
+          alt="Picture of the author"
+          width="50"
+          height="48"
+          className="w-auto h-auto "
+        />
+      </div>
 
-        <ul className="flex gap-12 font-medium h-2 tex-xl ">
-          <a href="#">
-            {" "}
-            <li className=" link link-underline link-underline-black  ">
-              Home
-            </li>
-          </a>
-          <a href="#">
-            {" "}
-            <li className="  link link-underline link-underline-black  ">
-              About
-            </li>
-          </a>{" "}
-          <a href="#">
-            {" "}
-            <li className=" link link-underline link-underline-black   ">
-              Contact
-            </li>
-          </a>{" "}
-          <a href="#">
-            {" "}
-            <li className=" link link-underline link-underline-black  ">
-              Explore
-            </li>
-          </a>
-        </ul>
+      <ul className="lg:flex gap-10 cursor-pointer  ease-in-out hidden  text-lg duration-300">
+        <li className="hover:font-medium ease-in-out duration-200">Home</li>
+        <li className="hover:font-medium ease-in-out duration-200">About</li>
+        <li className="hover:font-medium ease-in-out duration-200">Contact</li>
+        <li className="hover:font-medium ease-in-out duration-200">Explore</li>
+      </ul>
 
-        <button className="bg-black hover:bg-gray-900 text-white  py-2 px-6 rounded-full">
-          Sign in
+      <div className="lg:visible invisible">
+        <button className="rounded-full bg-black px-7 text-white p-2   ">
+          Sign in{" "}
         </button>
+      </div>
+
+      <div className="lg:hidden block  cursor-pointer">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-10 w-10"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={2}
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
       </div>
     </div>
   );
