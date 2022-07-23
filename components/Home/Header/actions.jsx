@@ -8,7 +8,7 @@ export default function Actions() {
   };
   return (
     <>
-      <div className="lg:visible invisible">
+      <div className="lg:visible invisible group">
         <button className="rounded-full bg-black px-7 text-white p-2   ">
           Sign in{" "}
         </button>
@@ -34,8 +34,8 @@ export default function Actions() {
         </svg>
       </div>
       <div
-        className={`h-screen z-30 w-screen bg-fuchsia absolute top-0 lg:hidden left-0 m-0 p-0 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-60 border ease-in duration-300   ${
-          toggle ? "visible" : "invisible"
+        className={`h-screen opacity-0  z-30 w-screen bg-fuchsia absolute top-0 lg:hidden left-0 m-0 p-0 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-60 border ease-in duration-300   ${
+          toggle ? "visible opacity-100" : "invisible"
         } `}
       >
         <Navigation size="md" />
