@@ -1,43 +1,22 @@
-import Image from "next/image";
 import React from "react";
-
+import Navigation from "./Navigation";
+import LogoWrapper from "./LogoWrapper";
 export default function Header() {
+  const toggleMenu = () => {
+    console.log("toggile menu");
+  };
   return (
     //return
     <div className=" p-4 lg:border-b border-gray-400 mx-6 lg:mx-28 flex items-center justify-between ease-in-out">
-      <div className="hidden md:block ">
-        <Image
-          src="/logo-md.png"
-          alt="Picture of the author"
-          width="130"
-          height="70"
-          className="w-auto h-auto "
-        />
-      </div>
-      <div className="md:hidden block justify-between">
-        <Image
-          src="/logo-sm.png"
-          alt="Picture of the author"
-          width="50"
-          height="48"
-          className="w-auto h-auto "
-        />
-      </div>
-
-      <ul className="lg:flex gap-10 cursor-pointer  ease-in-out hidden  text-lg duration-300">
-        <li className="hover:font-medium ease-in-out duration-200">Home</li>
-        <li className="hover:font-medium ease-in-out duration-200">About</li>
-        <li className="hover:font-medium ease-in-out duration-200">Contact</li>
-        <li className="hover:font-medium ease-in-out duration-200">Explore</li>
-      </ul>
-
+      <LogoWrapper />
+      <Navigation />
       <div className="lg:visible invisible">
         <button className="rounded-full bg-black px-7 text-white p-2   ">
           Sign in{" "}
         </button>
       </div>
 
-      <div className="lg:hidden block  cursor-pointer">
+      <div className="lg:hidden block  cursor-pointer" onClick={toggleMenu}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-10 w-10"
