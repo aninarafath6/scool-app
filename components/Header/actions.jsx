@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
+import Navigation from "./Navigation";
 
 export default function Actions() {
+  const [toggle, setToggle] = useState(false);
+  const toggleMenu = () => {
+    setToggle(!toggle);
+  };
   return (
     <>
       <div className="lg:visible invisible">
@@ -9,7 +14,10 @@ export default function Actions() {
         </button>
       </div>
 
-      <div className="lg:hidden block  cursor-pointer">
+      <div
+        className="lg:hidden block  cursor-pointer z-50"
+        onClick={toggleMenu}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-10 w-10"
@@ -24,6 +32,13 @@ export default function Actions() {
             d="M4 6h16M4 12h16M4 18h16"
           />
         </svg>
+      </div>
+      <div
+        className={`h-screen w-screen bg-white/30 absolute top-0 lg:hidden left-0 m-0 p-0 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-60 border ease-in duration-300   ${
+          toggle ? "visible" : "invisible"
+        } `}
+      >
+        <Navigation size="md" />
       </div>
     </>
   );
