@@ -34,7 +34,7 @@ export default function Actions() {
         </svg>
       </div>
       <div
-        className={`h-screen w-screen bg-white/30 absolute top-0 lg:hidden left-0 m-0 p-0 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-60 border ease-in duration-300   ${
+        className={`h-screen z-30 w-screen bg-white/30 absolute top-0 lg:hidden left-0 m-0 p-0 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-60 border ease-in duration-300   ${
           toggle ? "visible" : "invisible"
         } `}
       >

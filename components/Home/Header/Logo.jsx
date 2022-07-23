@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Images } from "../../constants/constants";
+import { Images } from "../../../constants/constants";
 
 function Logo({ size = "md", src, w = 130, h = 70 }) {
   return (
