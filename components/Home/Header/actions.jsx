@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
-import Navigation from "./Navigation";
 import Lottie from "react-lottie";
 import animationData from "../../../public/icons/Menu V3/menuV3.json";
+import SideBar from "./SideBar";
 export default function Actions() {
   const [toggle, setToggle] = useState(false);
   const animationContainer = useRef(null);
@@ -37,7 +37,7 @@ export default function Actions() {
       </div>
 
       <div
-        className="lg:hidden block  cursor-pointer z-50 bodymovinanim"
+        className="lg:hidden block  cursor-pointer z-50 "
         ref={animationContainer}
         onClick={toggleMenu}
       >
@@ -46,17 +46,12 @@ export default function Actions() {
           options={defaultOptions}
           height={50}
           width={50}
+          speed={1.5}
           // isStopped={!toggle}
           direction={toggle ? 1 : -1}
         />
       </div>
-      <div
-        className={`h-full opacity-0  z-30 w-screen bg-fuchsia py-20 fixed top-0 lg:hidden left-0 m-0 p-0 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-60 border ease-in duration-300    ${
-          toggle ? "visible opacity-100" : "invisible"
-        } `}
-      >
-        <Navigation size="md" />
-      </div>
+      <SideBar toggle={toggle} />
     </>
   );
 }
