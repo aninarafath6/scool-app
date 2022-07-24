@@ -13,9 +13,6 @@ const HomePage = () => {
         <Header />
         <HeroSection />
       </div>
-      <div className="section2">
-        <HeroSection />
-      </div>
     </div>
   );
 };
