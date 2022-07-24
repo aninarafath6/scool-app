@@ -1,9 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navigation from "./Navigation";
 
 export default function Actions() {
   const [toggle, setToggle] = useState(false);
+  useEffect(() => {
+    return () => {};
+  }, []);
   const toggleMenu = () => {
+    if (!toggle) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "visible";
+    }
     setToggle(!toggle);
   };
   return (
@@ -34,7 +42,7 @@ export default function Actions() {
         </svg>
       </div>
       <div
-        className={`h-screen opacity-0  z-30 w-screen bg-fuchsia absolute top-0 lg:hidden left-0 m-0 p-0 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-60 border ease-in duration-300   ${
+        className={`h-full opacity-0  z-30 w-screen bg-fuchsia py-20 fixed top-0 lg:hidden left-0 m-0 p-0 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-60 border ease-in duration-300    ${
           toggle ? "visible opacity-100" : "invisible"
         } `}
       >

@@ -5,7 +5,7 @@ export default function Navigation({ size = "sm" }) {
     <ul
       className={`${
         size == "md"
-          ? " justify-evenly text-center flex flex-col  gap-24 h-screen"
+          ? " justify-evenly text-center flex flex-col  gap-8 h-full"
           : "lg:flex gap-10 cursor-pointer  ease-in-out hidden  text-lg duration-300 "
       }`}
     >
