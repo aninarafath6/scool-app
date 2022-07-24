@@ -7,11 +7,14 @@ export default function SideBar({ toggle }) {
          ${toggle ? " opacity-100" : "opacity-0"} `}
     >
       <div
-        className={`h-full duration-300 -translate-y-2${
+        className={`h-full duration-300 text-center px-6 -translate-y-2${
           toggle ? "opacity-100" : " opacity-0 "
         }`}
       >
         <Navigation size="md" className="" />
+        <button className="rounded-md md:w-2/4 w-full bg-black px-7 text-white p-2   ">
+          Sign in{" "}
+        </button>
       </div>
     </div>
   );
