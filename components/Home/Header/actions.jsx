@@ -1,12 +1,30 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Navigation from "./Navigation";
-
+import Lottie from "react-lottie";
+import animationData from "../../../public/icons/Menu V3/menuV3.json";
 export default function Actions() {
   const [toggle, setToggle] = useState(false);
+  const animationContainer = useRef(null);
+  const anim = useRef(null);
   useEffect(() => {
-    return () => {};
+    return () => {
+      if (animationContainer.current) {
+        anim.current = lottie.loadAnimation({
+          container: animationContainer.current,
+          renderer: "svg",
+          loop: false,
+          autoplay: false,
+          animationData,
+        });
+
+        return () => anim.current?.destroy();
+      }
+    };
   }, []);
+
   const toggleMenu = () => {
+    anim.current?.setDirection(toggle ? -1 : 1);
+    anim.current?.play();
     if (!toggle) {
       document.body.style.overflow = "hidden";
     } else {
@@ -23,24 +41,10 @@ export default function Actions() {
       </div>
 
       <div
-        className="lg:hidden block  cursor-pointer z-50"
+        className="lg:hidden block  cursor-pointer z-50  w-14"
+        ref={animationContainer}
         onClick={toggleMenu}
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-10 w-10"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          strokeWidth={2}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M4 6h16M4 12h16M4 18h16"
-          />
-        </svg>
-      </div>
+      ></div>
       <div
         className={`h-full opacity-0  z-30 w-screen bg-fuchsia py-20 fixed top-0 lg:hidden left-0 m-0 p-0 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-60 border ease-in duration-300    ${
           toggle ? "visible opacity-100" : "invisible"

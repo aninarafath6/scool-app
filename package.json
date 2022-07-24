@@ -17,9 +17,11 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.2",
+    "lottie-web": "^5.9.6",
     "next": "latest",
     "react": "18.1.0",
     "react-dom": "18.1.0",
+    "react-lottie": "^1.2.3",
     "react-redux": "^8.0.2"
   },
   "resolutions": {

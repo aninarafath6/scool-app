@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <div className="flex px-6 justify-evenly py-9 flex-col md:flex-row items-center">
+    <div className="flex px-6 justify-evenly py-9 flex-col md:flex-row items-center hero-section">
       <div className="md:items-start  items-center  flex flex-col justify-center text-center md:text-start ">
         <h1 className="font-semibold text-4xl md:5xl md:text-start  text-center	 ">
           A perfect roadmap
