@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Navigation from "./Navigation";
-import Lottie from "react-lottie";
 import animationData from "../../../public/icons/Menu V3/menuV3.json";
+
 export default function Actions() {
   const [toggle, setToggle] = useState(false);
   const animationContainer = useRef(null);
@@ -20,7 +20,7 @@ export default function Actions() {
         return () => anim.current?.destroy();
       }
     };
-  }, []);
+  }, [animationContainer]);
 
   const toggleMenu = () => {
     anim.current?.setDirection(toggle ? -1 : 1);

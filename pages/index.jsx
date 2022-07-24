@@ -8,7 +8,6 @@ const HomePage = () => {
       <Head>
         <title>Scool</title>
         <link rel="icon" href="/favicon.ico" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.4/lottie_svg.min.js"></script>
       </Head>
       <div className="section1 lg:px-28">
         <Header />
