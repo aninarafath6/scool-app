@@ -4,4 +4,4 @@ const Images = {
   hero_peeps: "/images/peeps-1.png",
 };
 
-export { Images };
+export default Images;

@@ -1,18 +1,17 @@
 import Image from "next/image";
-import { Images } from "@constants/image-constants";
+import { Images, Contents } from "@constants/constants";
 
 export default function HeroSection() {
   return (
     <div className="flex px-6 justify-evenly py-9 flex-col md:flex-row items-center hero-section">
       <div className="md:items-start  items-center  flex flex-col justify-center text-center md:text-start ">
-        <h1 className="font-semibold md:text-6xl lg:text-7xl text-5xl md:text-start  text-center	 ">
+        <h1 className="font-semibold md:text-6xl lg:text-7xl text-4xl smd:text-5xl md:text-start  text-center	 ">
           A perfect <span className="inline-block  md:hidden">road</span>map
           <br />
           for everyone.{" "}
         </h1>
-        <p className="text-lg my-5 ">
-          Our expertly-designed roadmaps that <br /> will help you achieve your
-          dream.
+        <p className="text-lg  mt-5  whitespace-pre-line">
+          {Contents.hero.subtitle}
         </p>
       </div>
       <div className="s pt-9">

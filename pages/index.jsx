@@ -9,7 +9,7 @@ const HomePage = () => {
         <title>Scool</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="section1 lg:px-28">
+      <div className="section1 lg:px-36">
         <Header />
         <HeroSection />
       </div>
