@@ -48,4 +48,5 @@ yarn lint
 ```
 ### Links
 1.[Design](https://www.figma.com/file/N6qQh31qddBEpDgZ7sWTZC/Scool-Master-(Copy)?node-id=0%3A1)
+
 2.[progress](https://www.scool.studio)
