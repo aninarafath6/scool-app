@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Images, Contents } from "constants/index";
+import SearchInput from "./SearchInput";
 
 export default function HeroSection() {
   return (
@@ -13,6 +14,7 @@ export default function HeroSection() {
         <p className="text-lg  mt-5  whitespace-pre-line">
           {Contents.hero.subtitle}
         </p>
+        <SearchInput />
       </div>
       <div className="s pt-9">
         <Image
