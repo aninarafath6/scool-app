@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Images, Contents } from "@constants/constants";
+import { Images, Contents } from "constants/index";
 
 export default function HeroSection() {
   return (
