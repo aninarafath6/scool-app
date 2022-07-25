@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Images } from "@constants/image-constants";
 
 export default function HeroSection() {
   return (
@@ -16,7 +17,7 @@ export default function HeroSection() {
       </div>
       <div className="s pt-9">
         <Image
-          src="/images/peeps-1.png"
+          src={Images.hero_peeps}
           alt="peeps"
           width={300}
           height={400}

@@ -7,7 +7,7 @@ export default function LoginButton({ size = "sm" }) {
           size == "lg" ? "rounded-full" : "rounded-md w-full md:w-1/2"
         } bg-black px-7 text-white p-2  hover:bg-zinc-800  `}
       >
-        Sign in{" "}
+        Sign in
       </button>
     </div>
   );

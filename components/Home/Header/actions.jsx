@@ -34,7 +34,6 @@ export default function Actions() {
   return (
     <>
       <LoginButton size="lg" />
-
       <div
         className="lg:hidden block  cursor-pointer z-50 "
         onClick={toggleMenu}
