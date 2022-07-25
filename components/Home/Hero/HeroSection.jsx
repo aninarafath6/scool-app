@@ -14,7 +14,9 @@ export default function HeroSection() {
         <p className="text-lg  mt-5  whitespace-pre-line">
           {Contents.hero.subtitle}
         </p>
-        <SearchInput />
+        <div className="w-full  md:block ">
+          <SearchInput />
+        </div>
       </div>
       <div className="s pt-9">
         <Image
@@ -24,6 +26,10 @@ export default function HeroSection() {
           height={400}
           className="w-auto h-auto"
         />
+
+        <div className="w-full block md:hidden">
+          <SearchInput />
+        </div>
       </div>
     </div>
   );
