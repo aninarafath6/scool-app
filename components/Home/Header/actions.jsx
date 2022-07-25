@@ -1,17 +1,19 @@
-import React, { useState, useEffect, useRef } from "react";
+// library
+import React, { useState, useEffect } from "react";
 import Lottie from "react-lottie";
-import animationData from "../../../public/icons/Menu V3/menuV3.json";
+
+// local imports
+import animationData from "public/icons/Menu V3/menuV3.json";
+import LoginButton from "./LoginButton";
 import SideBar from "./SideBar";
+
 export default function Actions() {
   const [toggle, setToggle] = useState(false);
-  const animationContainer = useRef(null);
-  const menuRef = useRef();
   useEffect(() => {
     return () => {};
   }, []);
-  /* Play an animation on each click */
-
-  const defaultOptions = {
+  // lottie animation options
+  const animationOptions = {
     loop: false,
     autoplay: false,
     animationData: animationData,
@@ -19,35 +21,29 @@ export default function Actions() {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
-
+  // toggle side bar
   const toggleMenu = () => {
-    if (!toggle) {
-      document.body.style.overflow = "hidden";
-    } else {
+    // remove body scroll when side bar is open.
+    if (toggle) {
       document.body.style.overflow = "visible";
+    } else {
+      document.body.style.overflow = "hidden";
     }
     setToggle(!toggle);
   };
   return (
     <>
-      <div className="lg:visible invisible group">
-        <button className="rounded-full bg-black px-7 text-white p-2   ">
-          Sign in{" "}
-        </button>
-      </div>
+      <LoginButton size="lg" />
 
       <div
         className="lg:hidden block  cursor-pointer z-50 "
-        ref={animationContainer}
         onClick={toggleMenu}
       >
         <Lottie
-          ref={menuRef}
-          options={defaultOptions}
+          options={animationOptions}
           height={50}
           width={50}
           speed={1.5}
-          // isStopped={!toggle}
           direction={toggle ? 1 : -1}
         />
       </div>

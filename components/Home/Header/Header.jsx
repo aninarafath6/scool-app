@@ -1,4 +1,3 @@
-import React from "react";
 import Navigation from "./Navigation";
 import Actions from "./actions";
 import LogoWrapper from "./Logo";

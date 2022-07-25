@@ -1,4 +1,4 @@
-import React from "react";
+import LoginButton from "./LoginButton";
 import Navigation from "./Navigation";
 export default function SideBar({ toggle }) {
   return (
@@ -12,9 +12,7 @@ export default function SideBar({ toggle }) {
         }`}
       >
         <Navigation size="md" className="" />
-        <button className="rounded-md md:w-2/4 w-full bg-black px-7 text-white p-2   ">
-          Sign in{" "}
-        </button>
+        <LoginButton />
       </div>
     </div>
   );
