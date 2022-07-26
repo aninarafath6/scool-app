@@ -1,5 +1,4 @@
 export default function LoginButton({ size = "sm" }) {
-  console.log(size);
   return (
     <div className={`${size == "lg" ? "invisible lg:visible" : ""} `}>
       <button
