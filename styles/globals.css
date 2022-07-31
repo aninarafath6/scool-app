@@ -1,16 +1,13 @@
-/* stylelint-disable color-function-notation */
-/* stylelint-disable declaration-colon-newline-after */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .home {
-  background-image: url("../public/gradient\ 1\ 3.png"),
-    url("../public/gradient\ 1\ 3.png");
+  background-image: url("../public/bg.png");
   background-position: top left, bottom right;
   background-repeat: repeat-y;
   background-size: cover;
-  width: 100vw;
+  width: 100%;
 
   /* for test need to change 100% */
   height: 100%;
