@@ -17,9 +17,11 @@ function Explore() {
     },
   };
   return (
-    <div className="flex height-full flex-row">
-      <div className=" w-full  lg:p-5">
-        <h1 className="font-bold text-5xl mb-2">Learn Like a Pro</h1>
+    <div className="flex height-full flex-col md:flex-row">
+      <div className=" w-full  px-10 py-4">
+        <h1 className="font-semibold md:text-5xl  text-4xl smd:text-5xl">
+          Learn Like a Pro
+        </h1>
         <Paragraph>
           You can learn literally anything with our custom-made roadmaps. Which
           guides you through the steps to success.
