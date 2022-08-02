@@ -1,20 +1,29 @@
 import Head from "next/head";
-import { store } from "@redux/store";
-import { Provider } from "react-redux";
-import Home from "@components/Home";
+import Header from "@components/Home/Header/Header";
+import HeroSection from "@components/Home/Hero/HeroSection";
+import Explore from "@components/Home/explore/Explore";
 
 const HomePage = () => {
   return (
-    <>
+    <div className="home ">
       <Head>
         <title>Scool</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div className=" lg:px-36">
+        <Header />
+        <HeroSection />
 
-      <Provider store={store}>
-        <Home />
-      </Provider>
-    </>
+        {/* <HeroSection />
+        <HeroSection />
+        <HeroSection />
+        <HeroSection />
+        <HeroSection />
+        <HeroSection /> */}
+
+        <Explore />
+      </div>
+    </div>
   );
 };
 
