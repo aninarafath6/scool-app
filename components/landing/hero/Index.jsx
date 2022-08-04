@@ -16,7 +16,7 @@ function Hero() {
   return (
     <div className="bg overflow-hidden">
       <div className="grd">
-        <div className="px-8">
+        <div className="px-8 mds">
           <Header />
           <div className="flex flex-col  h-screen justify-evenly">
             <Banner />

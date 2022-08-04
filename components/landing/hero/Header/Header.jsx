@@ -4,7 +4,7 @@ import Navigation from "./Navigation";
 
 function Header() {
   return (
-    <div className="flex justify-between items-center ">
+    <div className="flex justify-between items-center z-40 ">
       <div className="logo flex items-center ">
         <div className="md hidden md:block cursor-pointer">
           <Image src={Icons.logo} width={100} height={100} alt="logo" />
