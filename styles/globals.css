@@ -16,7 +16,7 @@
 
 .bg::before {
   content: "";
-  background: url("../public/images/grids.svg");
+  background: url("../public/images/GRID.svg");
   /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
   content: " ";
   display: block;
@@ -25,12 +25,10 @@
   top: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.3;
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
-  /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
-  opacity: 0.6;
+  opacity: 0.3;
 }
 
 .grd {
@@ -46,7 +44,6 @@
   background: url("../public/images/bg-overlay.png");
   height: 100vh;
   width: 100vw;
-  position: absolute;
   background-repeat: no-repeat;
   background-size: cover;
 }
