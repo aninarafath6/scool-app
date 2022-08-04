@@ -19,12 +19,12 @@ function Hero() {
           <Header />
           <div className="flex flex-col  h-screen justify-evenly">
             <div className="text-center text-slate-400  ">
-              <h1 className="text-white text-center text-4xl  md:text-6xl font-extrabold">
+              <h1 className="text-white text-center text-3xl  md:text-6xl font-extrabold">
                 A perfectly designed
                 <br />
                 road map for everyone.{" "}
               </h1>
-              <p className="text-sm md:text-lg mt-4 md:mt-6">
+              <p className="text-xs md:text-lg mt-4 md:mt-6">
                 Our <span className="text-sky-400">expertly-designed</span> road
                 maps will help you achieve your dream.and <br />
                 Learn and grow with help from{" "}
