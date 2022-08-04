@@ -1,6 +1,7 @@
 import React from "react";
-import NavItem from "./NavItem";
 import "remixicon/fonts/remixicon.css";
+
+import NavItem from "./NavItem";
 function Navigation() {
   return (
     <ul className="flex gap-8  items-center pt-2 md:pt-0 ">
