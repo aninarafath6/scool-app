@@ -27,6 +27,7 @@ function Hero() {
                 height={50}
                 width={50}
                 speed={1.5}
+                 
               />
             </div>
           </div>
