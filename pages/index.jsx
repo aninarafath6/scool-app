@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { store } from "@redux/store";
 import { Provider } from "react-redux";
-import Home from "@components/Home";
+import Landing from "@components/landing";
 
 const HomePage = () => {
   return (
@@ -12,7 +12,7 @@ const HomePage = () => {
       </Head>
 
       <Provider store={store}>
-        <Home />
+        <Landing />
       </Provider>
     </>
   );
