@@ -1,13 +1,17 @@
 import React from "react";
 import Hero from "./hero/Index";
-import TrendingMembers from "./trending_mentors/TrendingMembers";
+import dynamic from "next/dynamic";
+// import Map from "./trending_mentors/TrendingMembers";
 
 function Landing() {
-  return (
-    <div className="">
-      <Hero />
+  const Map = dynamic(() => import("./trending_mentors/TrendingMembers"), {
+    ssr: false,
+  });
 
-      <TrendingMembers />
+  return (
+    <div className="bg-bg ">
+      <Hero />
+      <Map />
     </div>
   );
 }

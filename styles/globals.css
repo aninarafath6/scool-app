@@ -7,27 +7,11 @@
 }
 
 .bg {
-  background: #0b1120;
   height: 100vh;
-  width: 100vw;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.bg::before {
-  content: "";
-  background: url("../public/images/GRID.svg");
-  /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: 100% 100%;
-  background-size: cover;
-  opacity: 0.3;
+  /* stylelint-disable-next-line declaration-block-no-shorthand-property-overrides */
+  background: url("../public/images/GRID.svg"), #0b1120;
 }
 
 .grd {
@@ -42,7 +26,6 @@
   background: #0b1120;
   background: url("../public/images/bg-overlay.png");
   height: 100vh;
-  width: 100vw;
   background-repeat: no-repeat;
   background-size: cover;
 }
