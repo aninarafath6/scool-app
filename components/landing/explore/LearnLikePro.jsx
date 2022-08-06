@@ -2,7 +2,7 @@ import React from "react";
 
 function LearnLikePro() {
   return (
-    <section className="text-center px-8 mt-32">
+    <section className="text-center px-3 mt-32">
       <div className="content">
         <h1 className="text-slate-900 text-4xl tracking-tight font-extrabold sm:text-5xl dark:text-white ">
           Learn like a pro
