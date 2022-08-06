@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 // import Map from "./trending_mentors/TrendingMembers";
 
 function Landing() {
-  const Map = dynamic(() => import("./trending_mentors/TrendingMembers"), {
+  const Map = dynamic(() => import("./explore/explore"), {
     ssr: false,
   });
 
