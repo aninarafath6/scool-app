@@ -12,17 +12,19 @@ export default function Explore() {
                 <Image
                   src="/images/roadmaps/python.jpeg"
                   objectFit="cover"
-                  width={300}
-                  height={400}
+                  width={220}
+                  height={250}
                   alt=""
                 />
                 <div className="">
                   <h1 className=" text-start text-base text-slate-900 font-semibold dark:text-slate-300 line-clamp-2  ">
                     100 Days of Code: The Complete Python Pro Bootcamp for 2022
                   </h1>
-                  <p className="text-start text-sm mt-2 text-slate-400 line-clamp-3">
-                    Master Python by building 100 projects in 100 days. Learn
-                    data science, automation, build websites, games and apps!
+                  <p className="text-start text-sm mt-2 text-slate-400 ">
+                    Master Python by building 100 projects in 100 days.
+                  </p>
+                  <p className="text-start text-sm mt-2 text-slate-400 ">
+                    - by angala
                   </p>
                 </div>
               </left>
