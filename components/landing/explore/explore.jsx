@@ -3,8 +3,10 @@ import * as React from "react";
 export default function Explore() {
   return (
     <div className=" h-screen text-center p-10 pt-20">
-      <h1 className="text-5xl font-extrabold text-white">Learn like a pro</h1>
-      <p className="text-gray mt-5 text-lg text-slate-400 px-60">
+      <h1 className="md:text-5xl  text-4xl font-extrabold text-white">
+        Learn like a pro
+      </h1>
+      <p className="text-gray mt-5 text-lg text-center md:text-lg text-slate-400 lg:px-60">
         You can learn literally anything with our{" "}
         <span className="text-sky-400">custom-made Road Maps</span>. Which
         guides you through the steps to success,All of our maps are designed by
