@@ -1,21 +1,37 @@
+import Image from "next/image";
 import * as React from "react";
 
 export default function Explore() {
   return (
-    <div className=" h-screen text-center md:p-10 p-4 pt-20">
-      <h1 className="md:text-5xl  text-4xl font-extrabold text-white">
-        Learn like a pro
-      </h1>
-      <p className="text-gray mt-5 text-lg text-center md:text-lg text-slate-400 lg:px-60">
-        You can learn literally anything with our{" "}
-        <span className="text-sky-400">custom-made Road Maps</span>. Which
-        guides you through the steps to success,All of our maps are designed by
-        people who have successfully developed the skills they aimed for, and
-        now you can also experience their way ,An{" "}
-        <span className="text-sky-400">easy-to-use</span> dashboard that
-        provides you with everything you will ever need to stay at the top of
-        your game !
-      </p>
-    </div>
+    <section className=" relative max-w-7xl mx-auto px-4 focus:outline-none sm:px-3 md:px-5 mt-20">
+     
+      <div className="grid grid-cols-1 gap-6 lg:gap-8 sm:grid-cols-2 lg:grid-cols-3 max-h-[33rem] overflow-hidden mt-32">
+        <ul className="space-y-8">
+          <li className="text-sm leading-6">
+            <road className="relative flex flex-col-reverse p-6 bg-slate-50 rounded-lg  dark:bg-slate-800 dark:highlight-white/5">
+              <left className="flex items-center justify-start space-x-4  ">
+                <Image
+                  src="/images/roadmaps/python.jpeg"
+                  objectFit="cover"
+                  width={250}
+                  height={350}
+                  alt=""
+                />
+                <div className="">
+                  <h1 className=" text-start text-base text-slate-900 font-semibold dark:text-slate-300">
+                    100 Days of Code: The Complete Python Pro Bootcamp for 2022
+                  </h1>
+                  <p className="text-start text-sm mt-2 text-slate-400">
+                    Master Python by building 100 projects in 100 days. Learn
+                    data science, automation, build websites, games and apps!
+                  </p>
+                </div>
+              </left>
+              <right className=""></right>
+            </road>
+          </li>
+        </ul>
+      </div>
+    </section>
   );
 }

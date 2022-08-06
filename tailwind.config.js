@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         bg: "#0f172a",
         border_color: "#1e2334",
+        shade: "#1e293b",
       },
     },
   },
