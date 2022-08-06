@@ -2,7 +2,7 @@ import * as React from "react";
 
 export default function Explore() {
   return (
-    <div className=" h-screen text-center p-10 pt-20">
+    <div className=" h-screen text-center md:p-10 p-5 pt-20">
       <h1 className="md:text-5xl  text-4xl font-extrabold text-white">
         Learn like a pro
       </h1>
