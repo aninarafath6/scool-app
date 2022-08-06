@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.2",
+    "@tailwindcss/line-clamp": "^0.4.0",
     "leaflet": "^1.8.0",
     "leaflet-defaulticon-compatibility": "^0.1.1",
     "leaflet-geosearch": "^3.6.1",

@@ -3,7 +3,7 @@ import * as React from "react";
 
 export default function Explore() {
   return (
-    <section className=" relative max-w-7xl mx-auto px-4 focus:outline-none sm:px-3 md:px-5 mt-20">
+    <section className=" relative max-w-7xl mx-auto px-4 focus:outline-none sm:px-3 md:px-5 mt-20 h-screen">
       <div className="grid grid-cols-1 gap-6 lg:gap-8 sm:grid-cols-2 lg:grid-cols-3 max-h-[33rem] overflow-hidden mt-32">
         <ul className="space-y-8">
           <li className="text-sm leading-6">
@@ -12,15 +12,15 @@ export default function Explore() {
                 <Image
                   src="/images/roadmaps/python.jpeg"
                   objectFit="cover"
-                  width={250}
-                  height={350}
+                  width={300}
+                  height={400}
                   alt=""
                 />
                 <div className="">
-                  <h1 className=" text-start text-base text-slate-900 font-semibold dark:text-slate-300">
+                  <h1 className=" text-start text-base text-slate-900 font-semibold dark:text-slate-300 line-clamp-2  ">
                     100 Days of Code: The Complete Python Pro Bootcamp for 2022
                   </h1>
-                  <p className="text-start text-sm mt-2 text-slate-400">
+                  <p className="text-start text-sm mt-2 text-slate-400 line-clamp-3">
                     Master Python by building 100 projects in 100 days. Learn
                     data science, automation, build websites, games and apps!
                   </p>
