@@ -1,3 +1,4 @@
+import CustomButton from "@components/custom/CustomButton";
 import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import RoadMap from "./roadmap/RoadMap";
@@ -26,14 +27,7 @@ export default function Explore() {
           return <RoadMap key={key} roadmaps={grid[key]} />;
         })}
       </div>
-      <div className="inset-x-0 bottom-0 flex justify-center bg-gradient-to-t from-white pt-32 pb-8 pointer-events-none dark:from-slate-900 absolute">
-        <button
-          type="button"
-          className="relative bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 text-sm text-white font-semibold h-12 px-6 rounded-lg flex items-center dark:bg-slate-700 dark:hover:bg-slate-600 pointer-events-auto"
-        >
-          Explore more...
-        </button>
-      </div>
+      <CustomButton label="Explore more..." />
     </section>
   );
 }
