@@ -3,165 +3,26 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   value: [
     {
-      title: "100 Days of Code: The Complete Python Pro Bootcamp for 2022",
+      title: "Stock Market Trading: The Complete Technical Analysis Roadmap",
       description:
-        "Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!",
-      image: "/images/roadmaps/python.jpeg",
-      mentor: " - by angala",
+        "From stock market basics to advanced trading strategies, choose from a wide variety of mentorship programmes to fit your goals",
+      image:
+        "https://fundfolio.gumlet.io/fundfolio/Breakout-Universiy/shariqueNew.png?w=828&q=75",
+      mentor: " - Sharique Samsudheen",
     },
     {
-      title: "100 Days of Code: The Complete Python Pro Bootcamp for 2022",
+      title: "Machine Learning A-Z™: Hands-On Python & R In Data Science",
       description:
-        "Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!",
-      image: "/images/roadmaps/python.jpeg",
-      mentor: " - by angala",
+        "Learn To Trade The Stock Market. #1 Trading course. Inc: Technical Analysis, Candlesticks, Stocks, Day Trading +++",
+      image: "https://miro.medium.com/max/1838/1*c_fiB-YgbnMl6nntYGBMHQ.jpeg",
+      mentor: " - by joshua",
     },
     {
-      title: "100 Days of Code: The Complete Python Pro Bootcamp for 2022",
+      title: "The Complete JavaScript roadmap 2022: From Zero to Expert!",
       description:
-        "Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!",
-      image: "/images/roadmaps/python.jpeg",
-      mentor: " - by angala",
-    },
-    {
-      title: "100 Days of Code: The Complete Python Pro Bootcamp for 2022",
-      description:
-        "Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!",
-      image: "/images/roadmaps/python.jpeg",
-      mentor: " - by angala",
-    },
-    {
-      title: "100 Days of Code: The Complete Python Pro Bootcamp for 2022",
-      description:
-        "Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!",
-      image: "/images/roadmaps/python.jpeg",
-      mentor: " - by angala",
-    },
-    {
-      title: "100 Days of Code: The Complete Python Pro Bootcamp for 2022",
-      description:
-        "Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!",
-      image: "/images/roadmaps/python.jpeg",
-      mentor: " - by angala",
-    },
-    {
-      title: "100 Days of Code: The Complete Python Pro Bootcamp for 2022",
-      description:
-        "Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!",
-      image: "/images/roadmaps/python.jpeg",
-      mentor: " - by angala",
-    },
-    {
-      title: "100 Days of Code: The Complete Python Pro Bootcamp for 2022",
-      description:
-        "Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!",
-      image: "/images/roadmaps/python.jpeg",
-      mentor: " - by angala",
-    },
-    {
-      title: "100 Days of Code: The Complete Python Pro Bootcamp for 2022",
-      description:
-        "Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!",
-      image: "/images/roadmaps/python.jpeg",
-      mentor: " - by angala",
-    },
-    {
-      title: "100 Days of Code: The Complete Python Pro Bootcamp for 2022",
-      description:
-        "Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!",
-      image: "/images/roadmaps/python.jpeg",
-      mentor: " - by angala",
-    },
-    {
-      title: "100 Days of Code: The Complete Python Pro Bootcamp for 2022",
-      description:
-        "Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!",
-      image: "/images/roadmaps/python.jpeg",
-      mentor: " - by angala",
-    },
-    {
-      title: "100 Days of Code: The Complete Python Pro Bootcamp for 2022",
-      description:
-        "Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!",
-      image: "/images/roadmaps/python.jpeg",
-      mentor: " - by angala",
-    },
-    {
-      title: "100 Days of Code: The Complete Python Pro Bootcamp for 2022",
-      description:
-        "Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!",
-      image: "/images/roadmaps/python.jpeg",
-      mentor: " - by angala",
-    },
-    {
-      title: "100 Days of Code: The Complete Python Pro Bootcamp for 2022",
-      description:
-        "Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!",
-      image: "/images/roadmaps/python.jpeg",
-      mentor: " - by angala",
-    },
-    {
-      title: "100 Days of Code: The Complete Python Pro Bootcamp for 2022",
-      description:
-        "Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!",
-      image: "/images/roadmaps/python.jpeg",
-      mentor: " - by angala",
-    },
-    {
-      title: "100 Days of Code: The Complete Python Pro Bootcamp for 2022",
-      description:
-        "Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!",
-      image: "/images/roadmaps/python.jpeg",
-      mentor: " - by angala",
-    },
-    {
-      title: "100 Days of Code: The Complete Python Pro Bootcamp for 2022",
-      description:
-        "Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!",
-      image: "/images/roadmaps/python.jpeg",
-      mentor: " - by angala",
-    },
-    {
-      title: "100 Days of Code: The Complete Python Pro Bootcamp for 2022",
-      description:
-        "Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!",
-      image: "/images/roadmaps/python.jpeg",
-      mentor: " - by angala",
-    },
-    {
-      title: "100 Days of Code: The Complete Python Pro Bootcamp for 2022",
-      description:
-        "Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!",
-      image: "/images/roadmaps/python.jpeg",
-      mentor: " - by angala",
-    },
-    {
-      title: "100 Days of Code: The Complete Python Pro Bootcamp for 2022",
-      description:
-        "Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!",
-      image: "/images/roadmaps/python.jpeg",
-      mentor: " - by angala",
-    },
-    {
-      title: "100 Days of Code: The Complete Python Pro Bootcamp for 2022",
-      description:
-        "Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!",
-      image: "/images/roadmaps/python.jpeg",
-      mentor: " - by angala",
-    },
-    {
-      title: "100 Days of Code: The Complete Python Pro Bootcamp for 2022",
-      description:
-        "Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!",
-      image: "/images/roadmaps/python.jpeg",
-      mentor: " - by angala",
-    },
-    {
-      title: "100 Days of Code: The Complete Python Pro Bootcamp for 2022",
-      description:
-        "Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!",
-      image: "/images/roadmaps/python.jpeg",
-      mentor: " - by angala",
+        "The modern JavaScript course for everyone! Master JavaScript with projects, challenges and theory. Many courses in one!",
+      image: "https://cdn.mos.cms.futurecdn.net/EzgdmaCQuT84bgDL4fhXZS.jpg",
+      mentor: " - by anin arafath",
     },
   ],
 };
@@ -169,7 +30,6 @@ const initialState = {
 export const roadMapSlice = createSlice({
   name: "roadmap",
   initialState,
-  
 });
 
 // Action creators are generated for each case reducer function

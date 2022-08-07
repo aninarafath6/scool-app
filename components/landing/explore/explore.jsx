@@ -12,9 +12,9 @@ export default function Explore() {
   });
   useEffect(() => {
     setGrid({
-      grid1: roadmaps.slice(0, 10),
-      grid2: roadmaps.slice(10, 20),
-      grid3: roadmaps.slice(20, 30),
+      grid1: roadmaps.slice(0, 4),
+      grid2: roadmaps.slice(4, 8),
+      grid3: roadmaps.slice(8, 12),
     });
   }, []);
 
