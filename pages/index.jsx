@@ -1,7 +1,8 @@
 import Head from "next/head";
 import { store } from "@redux/store";
-import { Provider } from "react-redux";
 import Landing from "@components/landing";
+
+import { Provider } from "react-redux";
 
 const HomePage = () => {
   return (

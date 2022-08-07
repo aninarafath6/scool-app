@@ -5,7 +5,8 @@ function LearnLikePro() {
     <section className="text-center px-3 mt-14">
       <div className="content">
         <h1 className="text-slate-900 text-4xl tracking-tight font-extrabold sm:text-5xl dark:text-white ">
-          Learn like a pro
+          Learn like a pro with our
+          <br /> resources
         </h1>
         <p className="mt-6 max-w-3xl mx-auto text-lg text-slate-400">
           You can learn literally anything with our{" "}
