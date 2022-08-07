@@ -45,7 +45,47 @@ const initialState = {
         "From Beginner to iOS App Developer with Just One Course! Fully Updated with a Comprehensive Module Dedicated to SwiftUI!You will create a portfolio of 15 apps to be able apply for junior developer jobs at a technology company, and Master app design so you'll know how to wireframe, mockup and prototype your app idea,Create apps that use Machine Learning using Apple’s new CoreML",
       image:
         "https://images.macrumors.com/t/nYhlVfR_6eKG3rVp2E8Rw8LgCg4=/2341x/article-new/2020/10/appleevent2020_feature.jpg",
+      mentor: " - Francis Z",
+    },
+    {
+      title: "iOS & Swift - The Complete iOS App Development Roadmap",
+      description:
+        "From Beginner to iOS App Developer with Just One Course! Fully Updated with a Comprehensive Module Dedicated to SwiftUI!You will create a portfolio of 15 apps to be able apply for junior developer jobs at a technology company, and Master app design so you'll know how to wireframe, mockup and prototype your app idea,Create apps that use Machine Learning using Apple’s new CoreML",
+      image:
+        "https://images.macrumors.com/t/nYhlVfR_6eKG3rVp2E8Rw8LgCg4=/2341x/article-new/2020/10/appleevent2020_feature.jpg",
       mentor: " - angala",
+    },
+    {
+      title: "iOS & Swift - The Complete iOS App Development Roadmap",
+      description:
+        "From Beginner to iOS App Developer with Just One Course! Fully Updated with a Comprehensive Module Dedicated to SwiftUI!You will create a portfolio of 15 apps to be able apply for junior developer jobs at a technology company, and Master app design so you'll know how to wireframe, mockup and prototype your app idea,Create apps that use Machine Learning using Apple’s new CoreML",
+      image:
+        "https://images.macrumors.com/t/nYhlVfR_6eKG3rVp2E8Rw8LgCg4=/2341x/article-new/2020/10/appleevent2020_feature.jpg",
+      mentor: " - Francis Z",
+    },
+    {
+      title: "AWS Certified DevOps Engineer Professional 2022 - Hands On!",
+      description:
+        "Pass the AWS Certified DevOps Engineer Professional Certification (DOP-C01) with 20 hours of advanced hands-on videos.",
+      image:
+        "https://d1rytvr7gmk1sx.cloudfront.net/wp-content/uploads/2021/07/devops-concept.jpg",
+      mentor: " - ozhan illah",
+    },
+    {
+      title: "NFT MASTERY for Creators - Beginner to Advanced 2022 Roadmap",
+      description:
+        "Learn how to Create, Mint, and Sell Non-Fungible Tokens in no time, Bonus: FREE NFT & a second “hidden” NFT included!,How to use the most popular platforms for buying, creating and selling NFTs",
+      image:
+        "https://www.arabnews.com/sites/default/files/styles/n_670_395/public/2022/02/20/3080776-16902935.jpg?itok=PzcjJlM1",
+      mentor: " - Elon Musk",
+    },
+    {
+      title: "Metaverse Fundamentals: Blockchain, Cryptocurrency and NFTs",
+      description:
+        "Learn how to Create, Mint, and Sell Non-Fungible Tokens in no time, Bonus: FREE NFT & a second “hidden” NFT included!",
+      image:
+        "https://wp.technologyreview.com/wp-content/uploads/2022/06/Infosys-metaverse-image.png",
+      mentor: " - Zuck",
     },
   ],
 };
