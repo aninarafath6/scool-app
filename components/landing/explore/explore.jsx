@@ -3,7 +3,6 @@ import { useSelector } from "react-redux";
 
 import CustomButton from "@components/custom/CustomButton";
 import RoadMap from "./roadmap/RoadMap";
-// import { roadMapSlice } from "@redux/slice/explore_slice";
 
 export default function Explore() {
   const roadmaps = useSelector((state) => state.roadmap.value);
@@ -18,7 +17,7 @@ export default function Explore() {
       grid2: roadmaps.slice(4, 8),
       grid3: roadmaps.slice(8, 12),
     });
-  }, []);
+  }, [roadmaps]);
 
   console.log(roadmaps);
   return (
